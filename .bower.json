@@ -2,5 +2,5 @@
   "name": "braintree-amd",
   "homepage": "https://github.com/christianreed/braintree-amd.js",
   "version": "1.3.9",
-  "main": "target/braintree-amd.min.js",
+  "main": "js/braintree-amd.min.js",
 }
