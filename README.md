@@ -1,15 +1,9 @@
-# Braintree.js
+# Braintree-AMD.js
 
-This library is for use with [Braintree's payment gateway](http://braintreepayments.com/) in concert with one of [the supported client libraries](http://braintreepayments.com/docs).  It encrypts sensitive payment information in a web browser using the public key of an asymmetric key pair.
+This is a fork of the Braintree.js script that's a pure AMD implementation. The next major release of Braintree.js plans to take AMD into account at which point I'll discontinue this fork.
 
-## Getting Started
+In addition to making this pure AMD, I'll also plan on it having jquery passed as a dependency.
 
-See our <a href="https://www.braintreepayments.com/developers">developer quick start</a> for an example of how to use Braintree.js 
+In our case this script will be included with our main require script, though you could call it as necessary.
 
-## Documentation
-
- * [Official documentation](https://www.braintreepayments.com/docs/javascript)
-
-## License
-
-See the LICENSE file.
+See the [Braintree.js](https://github.com/braintree/braintree.js) for more information on the core of this script.
