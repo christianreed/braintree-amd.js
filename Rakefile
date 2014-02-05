@@ -112,13 +112,13 @@ namespace :build do
 
       #{BUILD_DIR}/bundle_footer.js
     ]
-    `cat #{files.join(' ')} >> #{TARGET_DIR}/braintree-#{BRAINTREE_VERSION}.js`
+    `cat #{files.join(' ')} >> #{TARGET_DIR}/braintree-amd-#{BRAINTREE_VERSION}.js`
   end
 
   desc "minify braintree.js"
   task :minify => ["build:bundle"] do
-    `cat #{BUILD_DIR}/minified_header.js > #{TARGET_DIR}/braintree-#{BRAINTREE_VERSION}.min.js`
-    `ruby #{BUILD_DIR}/jsmin.rb < #{TARGET_DIR}/braintree-#{BRAINTREE_VERSION}.js >> #{TARGET_DIR}/braintree-#{BRAINTREE_VERSION}.min.js`
+    `cat #{BUILD_DIR}/minified_header.js > #{TARGET_DIR}/braintree-amd.min.js`
+    `ruby #{BUILD_DIR}/jsmin.rb < #{TARGET_DIR}/braintree-amd-#{BRAINTREE_VERSION}.js >> #{TARGET_DIR}/braintree-amd.min.js`
   end
 end
 
